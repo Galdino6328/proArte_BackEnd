@@ -32,7 +32,7 @@ app.set("view engine", "ejs");
 //Payments route
 app.use("/payments", paymentsRoute);
 
-app.listen(process.env.API_PORT, function(err) {
+app.listen(process.env.API_PORT || 3001, function(err) {
   if (err) console.error(err);
   console.log(`API INICIADA NA PORTA ${process.env.API_PORT} 🚀`);
 });
