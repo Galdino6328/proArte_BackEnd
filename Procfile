@@ -1,1 +1,1 @@
-web: node src/index.js --e testing
+web: node src/index.js
